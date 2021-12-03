@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the Cafe Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-bar">
+        <a href="#header-background" class="menu-link">HOME</a>
+        <a href="#cafe-title" class="menu-link">ABOUT</a>
+        <a href="#cafe-menu" class="menu-link">MENU</a>
+        <a href="#cafe__find-us" class="menu-link">WHERE</a>
+      </div>
+      <div id="header-background">
+        <h1 class="header-title">the Cafe</h1>
+        <div class="cafe__background-bottom">
+          <span class="cafe-daytime">Open from 6am to 5pm</span>
+          <span class="cafe-address">15 Adr street, 5015</span>
+        </div>
+      </div>
+    </header>
+    <!-- Main content -->
+    <div class="content">
+      <div class="cafe-content">
+        <h4 id="cafe-title">
+          <span>ABOUT THE CAFE</span>
+        </h4>
+        <p class="cafe-intro">
+          The cafe was founded in blabla by Mr. Smith in Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <p class="cafe-intro">
+            In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+        </p>
+        <div class="cafe-quotes">
+          <p class="quote-sentence">
+            "Use products from nature for what it's worth - but never too early,
+            nor too late." Fresh is the new sweet.
+          </p>
+          <p class="quote-owner">Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <div class="cafe-store">
+            <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="Cafe store" class="cafe-image">
+            <p><span>Opening hours: </span>everyday from 6am to 5pm.</p>
+            <p><span>Address: </span>15 Adr street, 5015, NY</p>
+            <!-- The menu -->
+        </div>
+        <h4 id="cafe-menu">
+            <span>THE MENU</span>
+        </h4>
+        <div class="menu-choice">
+            <button onclick="eatMenu()" id="eat-button">Eat</button>
+            <button onclick="drinkMenu()" id="drink-button">Drink</button>
+        </div>
+        <ul class="food-menu-eat">
+            <li class="food-item">
+                <h5 class="food-title">Bread Basket</h5>
+                <p class="food-desc">Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Honey Almond Granola with Fruits</h5>
+                <p class="food-desc">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Belgian Waffle</h5>
+                <p class="food-desc">Vanilla flavored batter with malted flour 7.50</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Scrambled eggs</h5>
+                <p class="food-desc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Blueberry Pancakes</h5>
+                <p class="food-desc">With syrup, butter and lots of berries 8.50</p>
+            </li>
+        </ul>
+
+        <ul class="food-menu-drink">
+            <li class="food-item">
+                <h5 class="food-title">Coffee</h5>
+                <p class="food-desc">Regular coffee 2.50</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Chocolato</h5>
+                <p class="food-desc">Chocolate espresso with milk 4.50</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Corretto</h5>
+                <p class="food-desc">Whiskey and coffee 5.00</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Iced tea</h5>
+                <p class="food-desc">Hot tea, except not hot 3.00</p>
+            </li>
+            <li class="food-item">
+                <h5 class="food-title">Soda</h5>
+                <p class="food-desc">Coke, Sprite, Fanta, etc. 2.50</p>
+            </li>
+        </ul>
+        <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="Coffee Image" class="coffee-image">
+        <h4 id="cafe__find-us">
+            <span>WHERE TO FIND US</span>
+        </h4>
+        <p class="find__cafe-store">Find us at some address at some place.</p>
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="Cafe location" class="cafe-location">
+        <p class="cafe-service"><span>FYI! </span>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p class="cafe-reserved"><span>Reserve </span>a table, ask for today's special or just send us a message:</p>
+        <form action="/action_page.php" method="get" class="cafe-order">
+          <input type="text" placeholder="Name" class="cafe-customer">
+          <input type="text" placeholder="How many people" class="cafe-customer">
+          <input type="datetime-local" placeholder="Date and time" name="DateOrder" id="cafe__date-order">
+          <input type="text" placeholder="Message \ Special requirements" class="cafe-customer">
+          <a href="https://hentaiz.vip/" class="form-submit">SEND MESSAGE</a>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Powered by <a title="w3.css" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
